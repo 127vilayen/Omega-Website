@@ -81,7 +81,7 @@ const sr = ScrollReveal({
 sr.reveal("#logo", { reset: false });
 sr.reveal(".menu", { delay: 350, reset: false });
 sr.reveal(".icons", { delay: 350, reset: false });
-sr.reveal(".container1");
-sr.reveal(".container-About");
+sr.reveal(".container1", {reset: false});
+sr.reveal(".container-About", {reset: false});
 sr.reveal("#container-5");
 sr.reveal("#footer", {origin: "top"});
