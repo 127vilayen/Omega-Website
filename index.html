@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <title>Omega</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div id="container-nav" class="container">
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger">
+          <i class="fa fa-bars"></i>
+        </div>
+        <div id="logo">
+          <img id="image" src="./Picture/Omega logo.png" alt="Omega" />
+        </div>
+        <!-- Menu Items -->
+        <div class="menu" id="menu">
+          <ul id="menu-links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#collections">COLLECTION</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+        <!-- Icons -->
+        <div class="icons">
+          <ul>
+            <li><i class="fa-solid fa-volume-mute" id="music-icon"></i></li>
+            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li><i class="fa-solid fa-location-dot"></i></li>
+            <li><i class="fa-solid fa-user"></i></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <audio id="background-audio" muted loop>
+      <source src="./Picture/music.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <!-- Main Section -->
+    <section>
+      <div class="container1" id="home">
+        <div class="product-columns">
+          <div id="product-name">
+            <p>
+              Elegance and <br />
+              endurance unite <br />
+              in the Omega <br />
+              Seamaster
+            </p>
+            <button class="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="product-columns">
+          <div id="carousel-container">
+            <div class="carousel">
+              <div class="carousel-slide">
+                <img src="./Picture/watch 1.png" alt="Omega Seamaster 1" />
+              </div>
+              <div class="carousel-slide">
+                <img src="./Picture/watch 2.png" alt="Omega Seamaster 2" />
+              </div>
+              <div class="carousel-slide">
+                <img src="./Picture/watch 3.png" alt="Omega Seamaster 3" />
+              </div>
+              <div class="carousel-slide">
+                <img src="./Picture/watch 4.png" alt="Omega Seamaster 4" />
+              </div>
+              <div class="carousel-slide">
+                <img src="./Picture/watch 5.png" alt="Omega Seamaster 5" />
+              </div>
+            </div>
+            <!-- Carousel Dots -->
+            <div class="carousel-dots">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="product-columns">
+          <div id="product-description">
+            <div id="watch-icon">
+              <img src="./Picture/image.png" alt="Watch Icon" />
+            </div>
+            <p>
+              The Omega Seamaster is a legendary timepiece that embodies
+              precision, durability, and style. With its origins dating back to
+              1948, this iconic collection was designed for those with an
+              adventurous spirit. It combines elegant design with advanced
+              technology, making it suitable for both underwater exploration and
+              daily wear.
+            </p>
+            <a href="#" class="learn-more">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 3 video -->
+    <div class="video">
+      <video
+        src="./Picture/yt5s.io-Seamaster Diver 300M _ Baselworld 2018 _ OMEGA.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+    </div>
+    <!-- section 4 Watch About-->
+    <div class="container-About" id="about">
+      <div class="sects" id="sect1">
+        <img src="./Picture/watch about.jpg" alt="Watch About" />
+      </div>
+      <div class="sects" id="sect2">
+        <p>MOVEMENT</p>
+        <h3>
+          CALIBRE <br />
+          OMEGA 8900
+        </h3>
+      </div>
+      <div class="sects" id="sect3">
+        <div class="parts 1">
+          <img src="./Picture/back.png" alt="Watch" id="back" />
+        </div>
+        <div class="parts 2">
+          <p id="self">
+            Self-winding movement with Co-Axial escapement. Certified<br />
+            Master Chronometer, approved by METAS, resistant to magnetic<br />
+            fields reaching 15,000 gauss. Free sprung-balance with silicon
+            balance<br />
+            spring, two barrels mounted in series, automatic winding in both<br />
+            directions. Time zone function. Special luxury finish with
+            rhodium-plated<br />
+            rotor and bridges with Geneva waves in arabesque.
+          </p>
+        </div>
+        <div class="parts 3">
+          <div class="about-icons">
+            <img src="./Picture/Untitled1.jpg" alt="icon1_watch-01" />
+            <span> SELF WINDING </span>
+          </div>
+          <div class="about-icons">
+            <img src="./Picture/Untitled3.jpg" alt="icon2_watch-01" />
+            <span> 60 HOURS POWER RESERVE </span>
+          </div>
+          <div class="about-icons">
+            <img src="./Picture/Untitled2.jpg" alt="icon3_watch-01" />
+            <span> FREQUENCY 3,5 HZ </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 5 Advantages -->
+    <div id="container-5">
+      <div id="advantage1">
+        <div class="adv-sect">
+          <h3>
+            THE<br />
+            ADVANTAGE<br />
+            OF THE<br />
+            WATCH<br />
+          </h3>
+        </div>
+        <div class="adv-sect">
+          <p>
+            Inside this timepiece are the revolutionary components that<br />
+            guarantee the highest standards of performance. From the Co-Axial<br />
+            escapement for long-lasting precision to the silicon balance spring
+            for<br />
+            superior anti-magnetism, OMEGA has conquered every challenge that<br />
+            matters.
+          </p>
+        </div>
+        <div class="adv-sect">
+          <div class="small-image">
+            <img src="./Picture/watch detail.jpg" alt="Small Watch Image" />
+          </div>
+        </div>
+      </div>
+      <div id="advantage2">
+        <img src="./Picture/omega_2.jpg" alt="Big Watch Image" />
+      </div>
+    </div>
+    <div class="video">
+      <video
+        src="./Picture/Precision at Every Level _ OMEGA.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+    </div>
+    <!-- section 6 collection -->
+    <div id="container-6">
+      <div class="sects1" id="collections">
+        <h5>COLLECTIONS</h5>
+        <hr />
+      </div>
+      <p id="also-like">YOU MAY ALSO LIKE</p>
+      <div id="collections">
+        <div id="watch1" class="watch-collection">
+          <img src="./Picture/watch 2.png" alt="watch 1" />
+          <h4>LEARN MORE</h4>
+        </div>
+        <div id="watch2" class="watch-collection">
+          <img src="./Picture/watch 3.png" alt="watch 2" />
+          <h4>LEARN MORE</h4>
+        </div>
+        <div id="watch3" class="watch-collection">
+          <img src="./Picture/watch 4.png" alt="watch 3" />
+          <h4>LEARN MORE</h4>
+        </div>
+        <div id="watch4" class="watch-collection">
+          <img src="./Picture/watch 5.png" alt="watch 4" />
+          <h4>LEARN MORE</h4>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div id="footer">
+      <div id="part1">
+        <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+        <div class="input-container" id="contact">
+          <input type="email" name="email" id="email" placeholder="Email" />
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+      <div id="part2">
+        <div class="parts" id="part-i">
+          <h4>THE COLLECTION</h4>
+          <p>Aqua Terra 150M</p>
+          <p>Driver 300M</p>
+          <p>GlobeMaster</p>
+          <p>Ocean Planet 600M</p>
+          <p>Mooonwatch</p>
+          <p>Prestige</p>
+        </div>
+        <div class="parts" id="part-ii">
+          <h4>FIND YOUR OMEGA</h4>
+          <p>Men's Watches</p>
+          <p>Women's Watches</p>
+          <p>Gold Watches</p>
+          <p>Chronograph Watches</p>
+          <p>Dive Watches</p>
+          <p>Automatic Watches</p>
+        </div>
+        <div class="parts" id="part-iii">
+          <h4>PLANET WOLRD</h4>
+          <p>Watchmaking</p>
+          <p>Space</p>
+          <p>Sports</p>
+          <p>The Omega Museum</p>
+          <p>Chronicle</p>
+          <p>Straps</p>
+        </div>
+        <div class="parts" id="part-iv">
+          <h4>CUSTOMER SERVICE</h4>
+          <p>Invention and Prices</p>
+          <p>Preserve your Omega</p>
+          <p>Find a Service Center</p>
+          <p>Order a Catalogue</p>
+          <p>Glossary</p>
+          <p>FAQ</p>
+        </div>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="./scrollreveal.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
