@@ -84,4 +84,4 @@ sr.reveal(".icons", { delay: 350, reset: false });
 sr.reveal(".container1");
 sr.reveal(".container-About");
 sr.reveal("#container-5");
-sr.reveal("footer");
+sr.reveal("#footer", {origin: "top"});
